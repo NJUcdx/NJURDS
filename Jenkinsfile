@@ -3,9 +3,9 @@ pipeline{
     agent any
     //定义仓库地址
     environment {
-            REPOSITORY = "git@github.com:NJUcdx/springbootdemo.git"
-            project = "springbootdemo" //项目名称
-            image_name = "springbootdemo" //镜像名称
+            REPOSITORY = "git@github.com:NJUcdx/oasisplus.git"
+            project = "oasisplus" //项目名称
+            image_name = "oasisplus" //镜像名称
     }
     
     stages {
@@ -17,10 +17,10 @@ pipeline{
                 deleteDir()
                 //拉取代码
                 git "${REPOSITORY}"
-//                 sh 'mvn clean package'
-//                 withSonarQubeEnv('sonarqube') {
-//                     sh "mvn org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true -DskipTests=false sonar:sonar -Dproject.settings=sonar-project.properties"
-//                 }
+                sh 'mvn clean package'
+                withSonarQubeEnv('sonarqube') {
+                    sh "mvn org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true -DskipTests=false sonar:sonar -Dproject.settings=sonar-project.properties"
+                }
             }
         }
 
@@ -29,9 +29,9 @@ pipeline{
             steps {
                 script{
                     echo "查看当前目录"
-                    sh 'scp -r ../test root@172.19.241.102:/root/'
+                    sh 'scp -r ../oasisplus root@172.19.241.102:/root/'
                     echo "连接后端服务器"
-                    sh "ssh -tt root@172.19.241.102 'cd /root/test;sh build.sh'"
+                    sh "ssh -tt root@172.19.241.102 'cd /root/oasisplus;sh build.sh'"
 //                     echo "开始构建"
 //                     //构建镜像
 //                     sh 'mvn clean package'
@@ -44,17 +44,6 @@ pipeline{
 //                     sh 'docker build -f Dockerfile -t springbootdemo .'
                 }
 
-            }
-        }
-
-        stage("启动服务"){
-            steps {
-                script {
-                    echo "启动服务"
-                    // -v /etc/localtime:/etc/localtime:ro 同步时间
-//                     sh 'docker run --name ${project} -d -p 8088:8088 ${image_name}'
-//                     sh 'docker start ${project}'
-                }
             }
         }
 
