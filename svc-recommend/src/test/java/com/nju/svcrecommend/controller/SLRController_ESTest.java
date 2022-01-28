@@ -22,8 +22,8 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = false, useJEE = true)
 public class SLRController_ESTest extends SLRController_ESTest_scaffolding {
 
-//  @Test(timeout = 4000)
-//  public void test0()  throws Throwable  {
+  @Test(timeout = 4000)
+  public void test0()  throws Throwable  {
 //      ACMSLRMapper aCMSLRMapper0 = mock(ACMSLRMapper.class, new ViolatedAssumptionAnswer());
 //      doReturn((ArrayList) null).when(aCMSLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
 //      IEEESLRMapper iEEESLRMapper0 = mock(IEEESLRMapper.class, new ViolatedAssumptionAnswer());
@@ -41,5 +41,5 @@ public class SLRController_ESTest extends SLRController_ESTest_scaffolding {
 //         //
 //         verifyException("com.nju.svcrecommend.serviceImp.SLRSvcImp", e);
 //      }
-//  }
+  }
 }
