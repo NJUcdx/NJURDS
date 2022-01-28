@@ -24,26 +24,26 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = false, useJEE = true)
 public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
 
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
-      ACMSLRMapper aCMSLRMapper0 = mock(ACMSLRMapper.class, new ViolatedAssumptionAnswer());
-      doReturn(arrayList0).when(aCMSLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
-      IEEESLRMapper iEEESLRMapper0 = mock(IEEESLRMapper.class, new ViolatedAssumptionAnswer());
-      doReturn(arrayList0).when(iEEESLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
-      SLRSvcImp sLRSvcImp0 = new SLRSvcImp(aCMSLRMapper0, iEEESLRMapper0);
-      // Undeclared exception!
-      try { 
-        sLRSvcImp0.getSLRRecommend("", 1316, 1316, 1316, 762, 762);
-        fail("Expecting exception: ArrayIndexOutOfBoundsException");
-      
-      } catch(ArrayIndexOutOfBoundsException e) {
-         //
-         // 1730540
-         //
-         verifyException("com.nju.svcrecommend.serviceImp.SLRSvcImp", e);
-      }
-  }
+//  @Test(timeout = 4000)
+//  public void test0()  throws Throwable  {
+//      ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
+//      ACMSLRMapper aCMSLRMapper0 = mock(ACMSLRMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn(arrayList0).when(aCMSLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
+//      IEEESLRMapper iEEESLRMapper0 = mock(IEEESLRMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn(arrayList0).when(iEEESLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
+//      SLRSvcImp sLRSvcImp0 = new SLRSvcImp(aCMSLRMapper0, iEEESLRMapper0);
+//      // Undeclared exception!
+//      try {
+//        sLRSvcImp0.getSLRRecommend("", 1316, 1316, 1316, 762, 762);
+//        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+//
+//      } catch(ArrayIndexOutOfBoundsException e) {
+//         //
+//         // 1730540
+//         //
+//         verifyException("com.nju.svcrecommend.serviceImp.SLRSvcImp", e);
+//      }
+//  }
 
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
@@ -61,26 +61,26 @@ public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
       assertNull(responseVO0.getMessage());
   }
 
-  @Test(timeout = 4000)
-  public void test2()  throws Throwable  {
-      ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
-      ACMSLRMapper aCMSLRMapper0 = mock(ACMSLRMapper.class, new ViolatedAssumptionAnswer());
-      doReturn(arrayList0, arrayList0).when(aCMSLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
-      IEEESLRMapper iEEESLRMapper0 = mock(IEEESLRMapper.class, new ViolatedAssumptionAnswer());
-      doReturn(arrayList0, arrayList0).when(iEEESLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
-      SLRSvcImp sLRSvcImp0 = new SLRSvcImp(aCMSLRMapper0, iEEESLRMapper0);
-      PaperVO paperVO0 = new PaperVO();
-      arrayList0.add(paperVO0);
-      arrayList0.add(paperVO0);
-      sLRSvcImp0.getSLRRecommend(".", (-342), (-342), (-342), (-342), (-342));
-      // Undeclared exception!
-      try { 
-        sLRSvcImp0.getSLRRecommend(".", 3, 3, (-342), (-342), (-342));
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-      }
-  }
+//  @Test(timeout = 4000)
+//  public void test2()  throws Throwable  {
+//      ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
+//      ACMSLRMapper aCMSLRMapper0 = mock(ACMSLRMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn(arrayList0, arrayList0).when(aCMSLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
+//      IEEESLRMapper iEEESLRMapper0 = mock(IEEESLRMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn(arrayList0, arrayList0).when(iEEESLRMapper0).selectPaperVOsByKeyword(anyString() , anyInt() , anyInt());
+//      SLRSvcImp sLRSvcImp0 = new SLRSvcImp(aCMSLRMapper0, iEEESLRMapper0);
+//      PaperVO paperVO0 = new PaperVO();
+//      arrayList0.add(paperVO0);
+//      arrayList0.add(paperVO0);
+//      sLRSvcImp0.getSLRRecommend(".", (-342), (-342), (-342), (-342), (-342));
+//      // Undeclared exception!
+//      try {
+//        sLRSvcImp0.getSLRRecommend(".", 3, 3, (-342), (-342), (-342));
+//        fail("Expecting exception: NullPointerException");
+//
+//      } catch(NullPointerException e) {
+//      }
+//  }
 
   @Test(timeout = 4000)
   public void test3()  throws Throwable  {
