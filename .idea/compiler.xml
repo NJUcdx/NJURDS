@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="svc-recommend" />
+        <module name="cfg-service" />
+        <module name="svc-discovery" />
+        <module name="svc-disambiguation" />
+        <module name="svc-prediction" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cfg-service" target="1.8" />
+      <module name="oasisplus" target="1.8" />
+      <module name="svc-disambiguation" target="1.8" />
+      <module name="svc-discovery" target="1.8" />
+      <module name="svc-prediction" target="1.8" />
+      <module name="svc-recommend" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cfg-service" options="-parameters" />
+      <module name="svc-disambiguation" options="-parameters" />
+      <module name="svc-discovery" options="-parameters" />
+      <module name="svc-prediction" options="-parameters" />
+      <module name="svc-recommend" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cfg-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cfg-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-disambiguation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-disambiguation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-discovery/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-prediction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-prediction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-recommend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/svc-recommend/src/main/java" charset="UTF-8" />
+  </component>
+</project>

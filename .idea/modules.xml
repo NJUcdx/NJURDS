@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cfg-service/cfg-service.iml" filepath="$PROJECT_DIR$/cfg-service/cfg-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oasisplus.iml" filepath="$PROJECT_DIR$/oasisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svc-disambiguation/svc-disambiguation.iml" filepath="$PROJECT_DIR$/svc-disambiguation/svc-disambiguation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svc-discovery/svc-discovery.iml" filepath="$PROJECT_DIR$/svc-discovery/svc-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svc-prediction/svc-prediction.iml" filepath="$PROJECT_DIR$/svc-prediction/svc-prediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svc-recommend/svc-recommend.iml" filepath="$PROJECT_DIR$/svc-recommend/svc-recommend.iml" />
+    </modules>
+  </component>
+</project>
