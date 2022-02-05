@@ -3,7 +3,7 @@ pipeline{
     agent any
     //定义仓库地址
     environment {
-            REPOSITORY = "git@github.com:NJUcdx/oasisplus.git"
+            REPOSITORY = "git@github.com:NJUcdx/NJURDS.git"
             project = "oasisplus" //项目名称
             image_name = "oasisplus" //镜像名称
     }
