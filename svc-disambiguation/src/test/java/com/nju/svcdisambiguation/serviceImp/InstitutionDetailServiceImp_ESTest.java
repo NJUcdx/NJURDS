@@ -152,41 +152,41 @@ public class InstitutionDetailServiceImp_ESTest extends InstitutionDetailService
       assertTrue(responseVO0.getSuccess());
   }
 
-  @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      InstitutionInfoVO institutionInfoVO0 = mock(InstitutionInfoVO.class, new ViolatedAssumptionAnswer());
-      IEEEInstitutionDetailMapper iEEEInstitutionDetailMapper0 = mock(IEEEInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
-      doReturn((ArrayList) null).when(iEEEInstitutionDetailMapper0).selectInstitutionAuthor(anyString());
-      doReturn(institutionInfoVO0).when(iEEEInstitutionDetailMapper0).selectInstitutionDetailById(anyInt());
-      doReturn((String) null).when(iEEEInstitutionDetailMapper0).selectInstitutionName(anyInt());
-      doReturn((ArrayList<String>) null).when(iEEEInstitutionDetailMapper0).selectSameInsByInstitutionId(anyInt());
-      ACMInstitutionDetailMapper aCMInstitutionDetailMapper0 = mock(ACMInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
-      IEEEAuthorDetailMapper iEEEAuthorDetailMapper0 = mock(IEEEAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
-      ACMAuthorDetailMapper aCMAuthorDetailMapper0 = mock(ACMAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
-      InstitutionDetailServiceImp institutionDetailServiceImp0 = new InstitutionDetailServiceImp(iEEEInstitutionDetailMapper0, aCMInstitutionDetailMapper0, iEEEAuthorDetailMapper0, aCMAuthorDetailMapper0);
-      ResponseVO responseVO0 = institutionDetailServiceImp0.getInstitutionInfo(2153, ">7]");
-      assertNull(responseVO0.getMessage());
-  }
+//  @Test(timeout = 4000)
+//  public void test09()  throws Throwable  {
+//      InstitutionInfoVO institutionInfoVO0 = mock(InstitutionInfoVO.class, new ViolatedAssumptionAnswer());
+//      IEEEInstitutionDetailMapper iEEEInstitutionDetailMapper0 = mock(IEEEInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn((ArrayList) null).when(iEEEInstitutionDetailMapper0).selectInstitutionAuthor(anyString());
+//      doReturn(institutionInfoVO0).when(iEEEInstitutionDetailMapper0).selectInstitutionDetailById(anyInt());
+//      doReturn((String) null).when(iEEEInstitutionDetailMapper0).selectInstitutionName(anyInt());
+//      doReturn((ArrayList<String>) null).when(iEEEInstitutionDetailMapper0).selectSameInsByInstitutionId(anyInt());
+//      ACMInstitutionDetailMapper aCMInstitutionDetailMapper0 = mock(ACMInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
+//      IEEEAuthorDetailMapper iEEEAuthorDetailMapper0 = mock(IEEEAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
+//      ACMAuthorDetailMapper aCMAuthorDetailMapper0 = mock(ACMAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
+//      InstitutionDetailServiceImp institutionDetailServiceImp0 = new InstitutionDetailServiceImp(iEEEInstitutionDetailMapper0, aCMInstitutionDetailMapper0, iEEEAuthorDetailMapper0, aCMAuthorDetailMapper0);
+//      ResponseVO responseVO0 = institutionDetailServiceImp0.getInstitutionInfo(2153, ">7]");
+//      assertNull(responseVO0.getMessage());
+//  }
 
-  @Test(timeout = 4000)
-  public void test10()  throws Throwable  {
-      IEEEInstitutionDetailMapper iEEEInstitutionDetailMapper0 = mock(IEEEInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
-      ACMInstitutionDetailMapper aCMInstitutionDetailMapper0 = mock(ACMInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
-      doReturn((InstitutionInfoVO) null).when(aCMInstitutionDetailMapper0).selectInstitutionDetailById(anyInt());
-      doReturn((ArrayList) null).when(aCMInstitutionDetailMapper0).selectSameInsByInstitutionId(anyInt());
-      IEEEAuthorDetailMapper iEEEAuthorDetailMapper0 = mock(IEEEAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
-      ACMAuthorDetailMapper aCMAuthorDetailMapper0 = mock(ACMAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
-      InstitutionDetailServiceImp institutionDetailServiceImp0 = new InstitutionDetailServiceImp(iEEEInstitutionDetailMapper0, aCMInstitutionDetailMapper0, iEEEAuthorDetailMapper0, aCMAuthorDetailMapper0);
+//  @Test(timeout = 4000)
+//  public void test10()  throws Throwable  {
+//      IEEEInstitutionDetailMapper iEEEInstitutionDetailMapper0 = mock(IEEEInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
+//      ACMInstitutionDetailMapper aCMInstitutionDetailMapper0 = mock(ACMInstitutionDetailMapper.class, new ViolatedAssumptionAnswer());
+//      doReturn((InstitutionInfoVO) null).when(aCMInstitutionDetailMapper0).selectInstitutionDetailById(anyInt());
+//      doReturn((ArrayList) null).when(aCMInstitutionDetailMapper0).selectSameInsByInstitutionId(anyInt());
+//      IEEEAuthorDetailMapper iEEEAuthorDetailMapper0 = mock(IEEEAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
+//      ACMAuthorDetailMapper aCMAuthorDetailMapper0 = mock(ACMAuthorDetailMapper.class, new ViolatedAssumptionAnswer());
+//      InstitutionDetailServiceImp institutionDetailServiceImp0 = new InstitutionDetailServiceImp(iEEEInstitutionDetailMapper0, aCMInstitutionDetailMapper0, iEEEAuthorDetailMapper0, aCMAuthorDetailMapper0);
       // Undeclared exception!
-      try { 
-        institutionDetailServiceImp0.getInstitutionInfo(576, "ACM");
-        fail("Expecting exception: NullPointerException");
+//      try { 
+//        institutionDetailServiceImp0.getInstitutionInfo(576, "ACM");
+//        fail("Expecting exception: NullPointerException");
       
-      } catch(NullPointerException e) {
+//      } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
          //
-         verifyException("com.nju.svcdisambiguation.serviceImp.InstitutionDetailServiceImp", e);
-      }
-  }
+//         verifyException("com.nju.svcdisambiguation.serviceImp.InstitutionDetailServiceImp", e);
+//      }
+//  }
 }
