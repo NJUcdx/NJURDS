@@ -29,9 +29,9 @@ pipeline{
             steps {
                 script{
                     sh 'pwd'
-                    sh 'scp -r ../oasisplus root@172.19.241.102:/root/'
+                    sh 'scp -r ../NJURDS root@172.19.241.102:/root/'
                     echo "连接后端服务器"
-                    sh "ssh -tt root@172.19.241.102 'cd /root/oasisplus;sh build.sh'"
+                    sh "ssh -tt root@172.19.241.102 'cd /root/NJURDS;sh build.sh'"
 //                     echo "开始构建"
 //                     //构建镜像
 //                     sh 'mvn clean package'
