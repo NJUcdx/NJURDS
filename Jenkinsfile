@@ -28,7 +28,7 @@ pipeline{
         stage('远程服务器部署'){
             steps {
                 script{
-                    echo "查看当前目录"
+                    sh 'pwd'
                     sh 'scp -r ../oasisplus root@172.19.241.102:/root/'
                     echo "连接后端服务器"
                     sh "ssh -tt root@172.19.241.102 'cd /root/oasisplus;sh build.sh'"
