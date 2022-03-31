@@ -24,6 +24,7 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = false, useJEE = true)
 public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
 
+/**
   @Test(timeout = 4000)
   public void test0()  throws Throwable  {
       ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
@@ -44,6 +45,7 @@ public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
          verifyException("com.nju.svcrecommend.serviceImp.SLRSvcImp", e);
       }
   }
+  */
 
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
@@ -61,6 +63,7 @@ public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
       assertNull(responseVO0.getMessage());
   }
 
+/**
   @Test(timeout = 4000)
   public void test2()  throws Throwable  {
       ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
@@ -81,7 +84,7 @@ public class SLRSvcImp_ESTest extends SLRSvcImp_ESTest_scaffolding {
       } catch(NullPointerException e) {
       }
   }
-
+*/
   @Test(timeout = 4000)
   public void test3()  throws Throwable  {
       ArrayList<PaperVO> arrayList0 = new ArrayList<PaperVO>();
