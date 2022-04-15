@@ -1,7 +1,6 @@
 #!groovy
 pipeline{
     agent any
-    //定义仓库地址
     environment {
             REPOSITORY = "git@github.com:NJUcdx/NJURDS.git"
             project = "oasisplus" //项目名称
